@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ajuda Consciente</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f5f5;
+}
+
+header{
+background:#2e8b57;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.progress{
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+height:25px;
+}
+
+.progress-bar{
+background:#2e8b57;
+height:100%;
+width:20%;
+color:white;
+text-align:center;
+line-height:25px;
+font-size:14px;
+}
+
+.pix-box{
+background:#f0fff4;
+padding:15px;
+border-radius:8px;
+margin-top:10px;
+font-weight:bold;
+}
+
+button{
+margin-top:10px;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+background:#2e8b57;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#256f46;
+}
+
+footer{
+margin-top:40px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Ajuda Consciente</h1>
+<p>Uma vaquinha solidária para transformar vidas</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Sobre a Campanha</h2>
+<p>
+O projeto Ajuda Consciente foi criado para arrecadar doações destinadas
+a ajudar pessoas em situação de vulnerabilidade. Cada contribuição,
+independente do valor, faz uma grande diferença.
+</p>
+</div>
+
+<div class="card">
+<h2>Meta da Vaquinha</h2>
+
+<p>Meta: <strong>R$ 5.000</strong></p>
+<p>Arrecadado: <strong>R$ 1.000</strong></p>
+
+<div class="progress">
+<div class="progress-bar">20%</div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Faça uma Doação</h2>
+
+<p>Você pode ajudar usando PIX:</p>
+
+<div class="pix-box">
+PIX: 19971382032
+</div>
+
+<button onclick="copiarPix()">Copiar chave PIX</button>
+
+</div>
+
+<div class="card">
+<h2>Contato</h2>
+<p>Email: ajudaconsciente0@email.com</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Ajuda Consciente</p>
+</footer>
+
+<script>
+
+function copiarPix(){
+navigator.clipboard.writeText("ajudaconsciente@pix.com");
+alert("Chave PIX copiada!");
+}
+
+</script>
+
+</body>
+</html>
